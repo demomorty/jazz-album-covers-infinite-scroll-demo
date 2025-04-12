@@ -30,5 +30,5 @@ A visual tribute to classic jazz, this project dynamically fetches and displays 
 
 ## 🙏 Credits
 
-Saxophone illustration designed using AI-based generation. 
+Saxophone illustration designed using AI-based generation.
 Album data provided by the iTunes Search API.
