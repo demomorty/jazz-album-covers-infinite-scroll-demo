@@ -25,6 +25,9 @@ body {
     left:0;
     /* left: 120px; */
     width: 100vw;
+    border-bottom: none;
+    box-shadow: none;
+    outline: none;
     height: auto;
     /* background-color: rgba(193, 113, 113, 0.7); */
     background: url('img/grainy_texture.jpg');
