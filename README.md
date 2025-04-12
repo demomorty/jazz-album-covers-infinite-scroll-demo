@@ -1,4 +1,4 @@
-🔗 **Live Demo** : https://jazz-album-covers-infinite-scroll-demo.vercel.app/
+🔗 **Live Demo**: https://jazz-album-covers-infinite-scroll-demo.vercel.app/
 
 # 🎷 Jazz Album Covers Infinite Scroll
 
