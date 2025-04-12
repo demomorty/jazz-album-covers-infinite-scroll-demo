@@ -97,7 +97,7 @@ body {
 }
 
 /* Footer */
-#about {
+/* #about {
     text-align: center;
     margin: 40px 0;
     font-size: 14px;
@@ -111,7 +111,7 @@ body {
 
 #about a:hover {
     text-decoration: underline;
-}
+} */
 
 /* Responsive Adjustments */
 @media screen and (max-width: 600px) {
