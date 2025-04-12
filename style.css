@@ -1,154 +1,131 @@
+
 /* Import Font */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-
 /* Base Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/* 
-* {
-    backface-visibility: hidden;
-    -webkit-font-smoothing: antialiased;
-    -webkit-backface-visibility: hidden;
-    transform: translateZ(0);
-} */
 
-
-
+/* Body */
 body {
-    font-family: 'Bebas Neue', sans-serif;
-    background: url('img/grainy_texture.jpg');
-    background-repeat: repeat;
-    color: #ffffff;
-    padding-left: 120px;
-    /* Space for saxophone */
+  font-family: 'Bebas Neue', sans-serif;
+  background: url('img/grainy_texture.jpg') repeat;
+  color: #ffffff;
+  padding-left: 120px;
 }
 
-/* Fixed Header */
+/* Header Container */
 #page-title {
-    position: fixed;
-    top: 0;
-    left: 0;
-    /* left: 120px; */
-    width: 100vw;
-    border-bottom: none;
-    box-shadow: none;
-    outline: none;
-    transform: translateZ(0);
-    height: auto;
-    /* background-color: rgba(193, 113, 113, 0.7); */
-    background: url('img/grainy_texture.jpg');
-    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); */
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-    padding: 20px 0;
-    z-index: 10;
-    letter-spacing: 3px;
-    color: #d4af37;
-    /* gold tone like saxophone */
-    line-height: 1.4;
-    white-space: pre-line;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: url('img/grainy_texture.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 0;
+  z-index: 10;
 }
 
-/* Fixed Saxophone */
+/* Main Title */
+#main-title {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #d4af37;
+  line-height: 1.4;
+  text-align: center;
+  white-space: pre-line;
+}
+
+/* GitHub Link */
+#github-link {
+  font-size: 14px;
+  margin-top: 4px;
+  padding: 0;
+  color: #aaa;
+  line-height: 1.2;
+  text-align: center;
+}
+
+#github-link a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+#github-link a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Saxophone Image */
 #saxophone {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    z-index: 11;
-    object-fit: contain;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 11;
+  object-fit: contain;
 }
 
-/* Album Container */
+/* Album Grid */
 #album-container {
-    margin-top: 100px;
-    /* Space under fixed header */
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    padding-left: 150px;
-    /* Prevent albums from overlapping sax */
-    padding-right: 50px;
-
-    /* background-color: rgba(255, 0, 0, 0.1); */
-    /* temp test */
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px 50px 20px 150px;
 }
 
-/* #grid-box {
-    margin-top: 200px;
-} */
-/* .spacer {
-    height: 120px; 
-    background-color:#e85555;
-  }   */
-
-
-
-
+/* Album Items */
 .album {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
 }
 
 .album img {
-    width: 100%;
-    border-radius: 4px;
+  width: 100%;
+  border-radius: 4px;
 }
 
 .album p {
-    margin-top: 8px;
-    font-size: 14px;
-    color: #ccc;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #ccc;
 }
 
-/* Footer */
-/* #about {
-    text-align: center;
-    margin: 40px 0;
-    font-size: 14px;
-    color: #ccc;
-}
-
-#about a {
-    color: #00bfff;
-    text-decoration: none;
-}
-
-#about a:hover {
-    text-decoration: underline;
-} */
-
-/* Responsive Adjustments */
+/* Responsive Design */
 @media screen and (max-width: 600px) {
-    #page-title {
-        font-size: 28px;
-        left: 0;
-        width: 100%;
-        padding: 10px;
-        z-index: 10;
-    }
+  #page-title {
+    font-size: 16px;
+    padding: 10px;
+    height: 80px;
+  }
 
-    #album-container {
-        grid-template-columns: 1fr;
-        padding: 10px;
-        padding-left: 10px;
-    }
+  #main-title {
+    font-size: 20px;
+  }
 
-    body {
-        padding-left: 0;
-    }
+  #album-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
 
-    #saxophone {
-        height: auto;
-        width: 80px;
-        z-index: 11;
-    }
+  body {
+    padding-left: 0;
+  }
+
+  #saxophone {
+    left: 10px;
+    width: auto;
+    height: 80px;
+  }
 }
